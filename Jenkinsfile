@@ -3,9 +3,7 @@ pipeline {
   stages {
     stage('Tests') {
       steps {
-        echo 'démarrage du stage test'
-        sleep 30
-        echo 'Fin du stage test'
+        git 'https://github.com/xquesnot/gpt-pilot.git'
       }
     }
 
