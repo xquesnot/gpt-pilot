@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Tests') {
       steps {
-        git 'https://github.com/xquesnot/gpt-pilot.git'
+        git(url: 'https://github.com/xquesnot/gpt-pilot.git', branch: 'main')
       }
     }
 
